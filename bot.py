@@ -21,6 +21,10 @@ async def receive_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         chat_id=ADMIN_ID,
         text=f"پیام جدید از کاربر:\n\n{update.message.text}",
     )
+    
+    await update.message.reply_text(
+    "𝐘𝐨𝐮𝐫 𝐰𝐨𝐫𝐝𝐬 𝐰𝐢𝐥𝐥 𝐛𝐞 𝐜𝐚𝐫𝐫𝐢𝐞𝐝 𝐢𝐧 𝐬𝐢𝐥𝐞𝐧𝐜𝐞."
+)
 
 async def admin_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.message.reply_to_message:
